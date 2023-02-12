@@ -7,8 +7,6 @@ const getCurrent = async (req, res) => {
   res.status(200).json({
     email: currentUser.email,
     token: currentUser.token,
-    balance: currentUser.balance,
-    categories: currentUser.categories,
   });
 };
 
