@@ -19,6 +19,10 @@ router.get("/current", auth, ctrlWrapper(ctrl.getCurrent));
 
 // log out
 router.get("/logout", auth, ctrlWrapper(ctrl.logout));
+// google authorization
+router.get("/google", ctrlWrapper(ctrl.googleAuth));
+
+router.get("/google-redirect", ctrlWrapper(ctrl.googleRedirect));
 
 
 
